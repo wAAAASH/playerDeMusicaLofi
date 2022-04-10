@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/cadastro.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <title>Document</title>
+</head>
+<body>
+<form action="#">
+    
+    <!-- MAIN -->
+        <div class="container">
+        <div class="main-container">
+        <img id="background" src="IMG/wp5003441.png" alt="sunset">
+        <div class="cadastro">
+        <h1>Cadastre-se</h1>
+        </div>
+
+        <div class="typewriter">
+        <h2> ! Atenção ao concordar com os termos você estara permitindo
+                seus dados para coleta de informações.
+        </h2>
+        </div>
+        </div>
+
+       <div class="card">
+        <img src="IMG/e8CiPB.jpg" alt="japantokyo" id="backgroundcard">
+
+        <div class="container body-content">
+            <div class="box-login">
+              <h2>Login</h2>
+        
+              <!-- Código html do botão de login -->
+              <div id="fSignInWrapper">
+                <div id="customBtn" class="customGPlusSignIn">
+                  <span class="icon2"><i class="fa-brands fa-facebook-f"></i></span>
+                  <span class="buttonText">Logar com o Facebook</span>
+                </div>
+              </div>
+              <div id="name"></div>
+
+
+              <div id="gSignInWrapper">
+                <div id="customBtn" class="customGPlusSignIn">
+                  <span class="icon"><i class="fa-brands fa-google"></i></span>
+                  <span class="buttonText">Logar com o Google</span>
+                </div>
+              </div>
+              <div id="name"></div>
+        
+              <hr/>
+              <a href="javascript:void(0);" onclick="signOut();">Sign out</a>
+            </div>
+        
+            <hr />
+            <footer>
+              <p>&copy; Lo-Play</p>
+            </footer>
+          </div>
+
+        <div class="pwd">
+          <div class="overlay"></div>
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password">
+            <i class="fa-solid fa-eye-slash"></i>
+
+            <div class="submit">
+              <button type="submit" id="btn" value="btn">Enviar</button>
+              </div>
+          </div>
+        </div>
+      
+
+        
+        </div>
+       </div>
+
+       <div class="email">
+       <i class="fa-solid fa-envelope"></i>
+       <input type="email" placeholder="Email..." maxlength="60">
+       </div>
+
+    </div>
+    </div>
+    
+</form>
+<script src="JS/scriptDeAutenticação.js"></script>
+<script src="https://apis.google.com/js/api:client.js"></script>
+<script src="JS/script.js"></script>
+<script>
+  function onSuccess(googleUser) {
+    // Recuperando o token do usuario.
+    var id_token = googleUser.getAuthResponse().id_token;
+
+    // post com jQuery para enviar o token to usuário para o servidor
+    $.post( "http://www.seuservidor.com.br/token",
+      function(id_token) {
+        console.log('sucesso')
+      });
+}
+</script>
+</body>
+</html>

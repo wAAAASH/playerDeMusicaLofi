@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Musica para amantes de Lo-Fi</title>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+
+</head>
+<body> 
+    <form action="#" autocomplete="off">
+    <!-- NAVBAR -->
+    <navbar id="navbar">
+        <div class="navbar-container">
+        <div class="music-container" id="music-container">
+                <div class="music-info">
+                    <h4 class="title" id="title"></h4>
+                    <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+
+                <audio autoplay="autoplay" controls="controls" preload="auto" aria-hidden="true">
+                    <source src="musics/90sFlav  Call me.mp3" type="audio/mp3">
+                </audio>
+
+                <div class="img-container">
+                    <img src="IMG/90sflavjpg.jpg" alt="90sflavcallme" id="cover" />
+                </div>
+                <div class="navigation">
+                    <button id="prev" class="action-btn">
+                        <i class="fa-solid fa-backward" aria-hidden="true"></i>
+                    </button>
+                    <button id="play" class="action-btn action-btn-big">
+                        <i class="fa-solid fa-play" aria-hidden="true"></i>
+                    </button>
+                    <button id="next" class="action-btn">
+                        <i class="fa-solid fa-forward" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>  
+
+            <img src="IMG/logoDefPrincipal.png" alt="#" class="logo" loading="lazy">
+            <ul class="navbar-items">
+                <b><li class="navbar items">Premium</li></b>
+                <b><li class="navbar items">Supporte</li></b>
+                <b><li class="navbar items">Baixar</li></b>
+                <b><li class="navbar items">Inscrever-se</li></b>
+                <b><li class="navbar items">Entrar</li></b>
+                
+
+                <div id="search-box">
+                <input type="text" name="search" id="search" placeholder="Pesquisa">
+                <button type="submit" name="search" id="search" placeholder="Pesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <div id="menu-box">
+                <li><i class="fa-solid fa-bars" id="menu"></i></li>
+                <div id="box">
+                    <div class="items">
+                        <ul>
+                            <li style="--clr:#ff0000;">
+                                <a href="#"><i class="fa-solid fa-heart"></i>Favoritos</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <br>
+                        <ul>
+                            <li style="--clr:#ff9100;">
+                                <a href="#"><i class="fa-solid fa-list-music"></i></i>Playlists</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <br>
+                        <ul>
+                            <li style="--clr:#09ff00;">
+                                <a href="#"><i class="fa-solid fa-users-line"></i>Chats</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <br>
+                        <ul>
+                            <li style="--clr:#ffee00;">
+                                <a href="#"><i class="fa-solid fa-filter-list"></i>Filtrar</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <br>
+                        <ul>
+                            <li style="--clr:#ff0000;">
+                                <a href="#"><i class="fa-solid fa-signal-stream"></i></i>Streams</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                </div>
+            </ul>
+        </div>
+    </navbar> 
+
+<!-- SHOWCASE -->
+    <div id="showcase">
+        <div class="container-fluid">
+            <h2>Lo-Fi para Todos.</h2>
+            <p id="title-fluid">Centenas de musicas a sua escolha. E nem precisa pagar !<br>
+                <em>Ouça Online e Grátis nossas músicas!</em></p>
+            <button id="btn-primary">Baixe o Lo-Play de Graça!</button>
+        </div>
+    </div>
+
+
+<!-- MAIN -->
+<div id="side-container">
+    <div class="side-container">
+        <h3 id="left-side">Lo-fi começou a ser reconhecido como <br> um estilo de música popular na década de 1990, <br> quando passou a ser conhecido 
+        alternadamente <br> como música DIY. A distorção harmônica <br> e <em>"calor analógico"</em> às vezes são sugeridos <br> de maneira enganosa
+        como características <Br> centrais da música Lo-Fi. 
+            
+        <br> <br> O termo foi popularizado nos anos 1980 pelo <br> DJ William Berger, que tocava só 
+        músicas <br> caseiras das antigas em seu programa na rádio. 
+
+        <br><br> As músicas são uma mistura de jazz,<br> música eletrônica e hip-hop e o gênero 
+        <br> tem como uma das principais características <br> o conceito de <em><strong>“Faça você mesmo”</strong></em>; os <Br> artistas normalmente desenvolvem as <br> músicas 
+        em estúdios caseiros e <br> introduzem nas faixas elementos do <br> cotidiano,como diálogos abafados e <br> outros barulhos externos, criando um 
+        <br> efeito genuíno de música ambiente.</h3>
+        
+    </div>
+</div>
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="footer-container">
+        <ul>
+            <li style="--clr:#1877f2;">
+                <a href="https://www.facebook.com/wallace.henrique.543" title="Me siga nas redes ;" target="_blank"><i id="face" class="fa-brands fa-facebook-f"></i></a>
+            </li>
+        </ul>
+
+        <ul>
+            <li style="--clr:#fff;">
+                <a href="https://github.com/iamx3ur" title="Me siga nas redes ;" target="_blank"><i id="git" class="fa-brands fa-github"></i></a>
+            </li>
+        </ul>
+
+        <ul>
+            <li style="--clr:#c32aa3;">
+                <a href="https://www.instagram.com/w.manji/" title="Me siga nas redes" target="_blank"><i id="insta" class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+
+        <ul>
+            <li style="--clr:#1077f2;"> 
+                <a href="https://www.linkedin.com/in/wallace-henrique-b67038203/" title="Me siga nas redes" target="_blank"><i id="link" class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+        </ul>
+
+
+    </div>
+</footer>
+
+<script src="JS/script.js"></script>
+<script src="jQuery/animations.js"></script>
+<script src="JS/playSong.js"></script>
+</form>
+</body>
+</html>

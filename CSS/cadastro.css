@@ -1,0 +1,315 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    font-family: Arial;
+    width: 100%;
+    
+}
+.cadastro {
+    width: 50%;
+    position: relative;
+    left: 23%;
+    top: 100px;
+  
+}
+.cadastro h1{
+   color: rgb(255, 255, 255);
+   font-weight: bolder;
+   font-size: 50pt;
+   font-family: 'Lato';
+   border: none;
+   letter-spacing: 10px;
+  
+}
+.typewriter 
+{
+    width: 50%;
+    position: relative;
+    left: 10%;
+    top: 100px;
+}
+
+.typewriter h2 
+{
+    color: rgb(255, 255, 255);
+   font-weight: bolder;
+   font-size: 10pt;
+   font-family: 'monospace';
+   overflow: hidden;
+   border: none;
+   letter-spacing: .15em;
+   white-space: nowrap;
+   animation: 
+        typing 3.5s steps(100, end),
+        blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    
+    to {
+        width: 150%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: rgb(223, 45, 154);
+    }
+}
+
+#background
+{
+    top: -15px;
+    left: -20px;
+    position: fixed;
+    border: border-box;
+    filter: blur(10px);
+    width: 110%;
+    height: 1000px;
+    
+   
+}
+/* CARDS */
+.card 
+{   
+    
+    box-shadow: 0 0 5px black;
+    border-radius: 8px;
+    left: 10%;
+    top: 100px;
+    position: relative;
+    width: 70%;
+    min-height: 40vh;
+    background: #15141a;
+}
+
+#backgroundcard {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+    border: border-box;
+    border-radius: 8px;
+    left: 00%;
+    top: 2px;
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    filter: brightness(1.3);
+}
+
+/*INPUTS */
+/* Senha */
+.pwd 
+{
+    background-color: rgb(0, 217, 255);
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.5)
+    0px 7px 29px 0px;
+    position: relative;
+    top: -380px;
+    width: 300px;
+    height: 30px;
+    left: 200px;
+}
+
+.pwd input 
+{
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    color: #fdfdfd;
+    width: 200px;
+    bottom: 10px;
+    font-family: 'Fira Code';
+}
+
+
+.pwd input:focus 
+{
+    outline: none;
+    
+}
+
+
+.pwd i 
+{
+    font-size: 1em;
+    padding: 1em;
+    color: #dbdbdb;
+    transition: 0.3s;
+    top: 100px;
+    margin-top: -6px;
+
+}
+
+
+
+.pwd .fa-eye,
+.pwd .fa-eye-slash {
+    cursor:pointer;
+    color: #747474;
+    width: 0.4em;
+}
+
+
+.pwd > div:nth-child(2) {
+    position:relative;
+    
+
+}
+
+/* Email */
+.email {
+    background-color: rgb(0, 217, 255);
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.5)
+    0px 7px 29px 0px;
+    position: relative;
+    top: -350px;
+    width: 300px;
+    height: 30px;
+    left: 705px ;
+}
+
+.email input 
+{
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    color: #ffffff;
+    width: 200px;
+    bottom: 2px;
+    font-family: 'Fira Code';
+}
+
+.email input:focus {
+    outline: none;
+}
+
+.email i {
+    font-size: 1em;
+    padding: 1em;
+    color: #dbdbdb;
+    transition: 0.3s;
+    top: 100px;
+    margin-top: -6px;
+}
+
+/* BOTOES*/
+
+#btn {
+    color: #000000;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(255, 0, 212));
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    position: absolute;
+    top: 150%;
+    left:0%;
+    font-weight: bold;
+    box-shadow: 0 0 9px #ffffff;
+    transition: 2s;
+}
+
+#btn:hover {
+    background: #ff00ea;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #f403f4,
+    0 0 25px #c08bc0,
+    0 0 50px #f403b8,
+    0 0 100px #9403f4;
+}
+
+#customBtn {
+    margin-left: 210px;
+    display: inline-block;
+    background: #4285f4;
+    color: white;
+    width: 250px;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-top: 5px;
+  }
+  #customBtn:hover {
+    cursor: pointer;
+  }
+  span.label {
+    font-weight: bold;
+  }
+  span.icon {
+    background: url('https://google-developers.appspot.com/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+    border-right: #2265d4 1px solid;
+  }
+
+  span.icon2 {
+    background: url('https://google-developers.appspot.com/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+    border-right: #2265d4 1px solid;
+  }
+
+  span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 30px;
+    padding-right: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .box-login h2 {
+      margin-top: -140px;
+      margin-left: 290px;
+  }
+
+  hr {
+      margin-left: 0;
+      width: 68.5%;
+  }
+
+.icon .fa-brands {
+    font-size: 15pt;
+    margin-left: 12px;
+    margin-top: 13.5px;
+    color: #ea4335;
+}
+
+.icon2 .fa-brands {
+    font-size: 18pt;
+    margin-left: 15px;
+    margin-top: 11px;
+    color: #003cff;
+}
+
+.icon2 .fa-brands:hover {
+    font-size: 20pt;
+    transition: 0.5s;
+}
+
+.icon .fa-brands:hover{
+    font-size: 19pt;
+    transition: 0.5s;
+}
