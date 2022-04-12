@@ -11,6 +11,6 @@ list.mouseenter((e) => {
 list.on("click", (e) => {
     e.preventDefault();
     box.animate({
-        left: "-120px"
+        left: "-144px"
     }, 300)
 })
